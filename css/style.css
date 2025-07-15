@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap');
+/* font-family: "Nunito", sans-serif; */
+/* font-family: "Parisienne", cursive; */
+
+:root {
+    --bg-dark: #262324;
+    --bg-light: #FCF0E4;
+    --text-dark: #262324;
+    --text-light: #FCF0E4;
+    --text-accent: #D8D2C2;
+    --accent-one: #5E2B2B;
+    --accent-two: #4F3E38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    font-family: "Nunito", sans-serif;
+}
+
+html, body {
+    background-color: var(--text-accent);
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 0px 3px var(--bg-dark);
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+/* Header */
+
+.container header .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+    position: absolute;
+    /* top: 7%; 
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: var(--accent-two);
+    width: calc(100% - 4rem);
+    height: 4rem;
+    /* box-shadow: var(); */
+    padding: 1rem 2rem;
+    border-radius: 16px;
+}
+
+.container header .hero .logo a {
+    font-size: 1.7rem;
+    color: var(--text-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.container header .hero .logo a span {
+    font-family: "Parisienne", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    padding-left: 2px;
+}
+
+.container header .hero .logo a::after {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    width: 1.2rem;
+    background: var(--text-accent);
+    bottom: 10%;
+    left: 40%;
+    transition: all 0.23s ease-out;
+}
+
+.container header .hero .logo a:hover::after {
+    width: 101%;
+    left: 0;
+}
+
+.container header .hero .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header .hero .nav ul li {
+    margin-left: 2.5rem;
+}
+
+.container header .hero .nav ul li a {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.container header .hero .nav ul li a::after {
+    content: ' ';
+    height: 1px;
+    width: 30%;
+    z-index: 15111;
+    position: absolute;
+    background-color: var(--text-accent);
+    opacity: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.23s ease-in;
+}
+
+.container header .hero .nav ul li a:hover::after {
+    height: 2.2px;
+    width: 100%;
+    opacity: 1;
+    top: 90%;
+}
+
+.container header .hero .nav ul li a:hover {
+    color: var(--text-accent);
+}
+
+.container header .hero .nav ul h5 {
+    border: 2px solid var(--bg-light);
+    padding: 0.6rem 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container header .hero .nav ul h5::after {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-light);
+    bottom: -100%;
+    left: 0;
+    border-radius: 100%;
+    transition: all 0.23s ease-out;
+}
+
+.container header .hero .nav ul h5:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.container header .hero .nav ul h5:hover a {
+    color: var(--text-dark);
+}
+
+.container header .hero .nav ul h5 a {
+    color: var(--text-accent);
+    font-size: 1.2rem;
+    z-index: 101;
+}
+
+/* Main Body */
+
+.container main .firstSection {
+    margin-top: 5rem;
+    background-color: var(--bg-dark);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    height: 43rem;
+}
+
+.container main .firstSection .text {
+    width: 41rem;
+}
+
+.container main .firstSection .text h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+/* .container main .firstSection .text h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.container main .firstSection .text h4 span {
+    margin-right: 11.2rem;
+} */
+
+.container main .firstSection .text p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container main .firstSection .text button {
+  position: relative;
+  display: inline-block;
+  height: 4rem;
+  width: 11rem;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid var(--bg-light);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--bg-light);
+}
+
+.container main .firstSection .text button:hover {
+  color: var(--bg-dark);
+  box-shadow: inset 0 -100px 0 0 var(--bg-light);
+}
+
+.container main .firstSection .text button:active {
+  transform: scale(0.9);
+}
+
+.container main .firstSection .text button:hover a {
+    color: var(--bg-dark);
+    font-weight: 700;
+}
+
+.container main .firstSection .text button a {
+    color: var(--text-accent);
+    font-size: 1.4rem;
+}
+
+.container main .firstSection .image {
+    width: 30rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.23s ease-in-out;
+}
+
+.container main .firstSection .image img {
+    height: 51rem;
+    transform: rotate(35deg);
+    transition: all 1s ease-in-out;
+}
+
+.container main .firstSection .image:hover {
+    transform: translate(-2px, -5px);    
+}
+
+.container main .secondSection {
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    height: 43rem;
+}
+
+.container main .secondSection .sideText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35rem;
+}
+
+.container main .secondSection .sideText h3 {
+    color: var(--text-dark);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.container main .secondSection .sideText h4 {
+    color: var(--text-dark);
+    font-size: 1.4rem;
+}
+
+.container main .secondSection .sideText p {
+    color: var(--text-dark);
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-family: 600;
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
+}
+
+.container main .secondSection .sideImg img { 
+    height: 35rem;
+    box-shadow: 0px 0px 8px var(--bg-dark);
+}
+
+.container main .thirdSection  {
+    background: var(--bg-dark);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1.5rem;
+    height: 33rem;
+}
+
+.container main .thirdSection .title h3 {
+    font-size: 2.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.container main .thirdSection .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 72rem
+}
+
+.container main .thirdSection .content .column img {
+    height: 15rem;
+    width: 23rem;
+    box-shadow: 0px 0px 5px #000;
+    margin-bottom: 1rem;
+}
+
+.container main .thirdSection .content h4 {
+    font-size: 1.4rem;
+    color: var(--text-accent);
+    margin-left: 0.5rem;
+}
+
+.container main .thirdSection .content h4 span {
+    font-size: 1.6rem;
+}
+
+.container main .thirdSection .content h3 {
+    font-size: 1.6rem;
+    color: var(--text-accent);
+    margin-left: 0.5rem;
+}
+
+.container main .thirdSection .content a {
+    font-size: 1.4rem;
+    color: var(--bg-light);
+    text-decoration: underline;
+}
+
+.container footer {
+    margin-top: 1rem;
+    background-color: var(--bg-dark);
+    padding: 1rem 3rem 0.3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.container footer .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2.3rem;
+}
+
+.container footer .top .leftSide {
+    width: 16.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.container footer .top .leftSide .logo a {
+    font-size: 1.7rem;
+    color: var(--text-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.container footer .top .leftSide .logo a span {
+    font-family: "Parisienne", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    padding-left: 2px;
+}
+
+.container footer .top .leftSide .logo a::after {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    width: 1.2rem;
+    background: var(--text-accent);
+    bottom: 10%;
+    left: 40%;
+    transition: all 0.23s ease-out;
+}
+
+.container footer .top .leftSide .logo a:hover::after {
+    width: 101%;
+    left: 0;
+}
+
+.container footer .top .leftSide p {
+    text-align: justify;
+    color: var(--text-accent);
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+}
+
+.container footer .top .nav h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+    color: var(--bg-light);
+}
+
+.container footer .top .nav ul li {
+    margin-bottom: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.container footer .top .nav ul li a {
+    font-size: 1rem;
+    color: var(--text-accent);
+}
+
+.container footer .top .nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container footer .top .links h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+    color: var(--bg-light);
+}
+
+.container footer .top .links ul li {
+    margin-bottom: 0.6rem;
+    margin-left: 0.7rem;
+}
+
+.container footer .top .links ul li a {
+    font-size: 1rem;
+    color: var(--text-accent);
+}
+
+.container footer .top .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.container footer .bottom p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
