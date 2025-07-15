@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parisienne&display=swap');
+/* font-family: "Nunito", sans-serif; */
+/* font-family: "Parisienne", cursive; */
+
+:root {
+    --bg-dark: #262324;
+    --bg-light: #FCF0E4;
+    --text-dark: #262324;
+    --text-light: #FCF0E4;
+    --text-accent: #D8D2C2;
+    --accent-one: #5E2B2B;
+    --accent-two: #4F3E38;
+}
+
+/* Header Start */
+
+.container header .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+    position: absolute;
+    /* top: 7%; 
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: var(--accent-two);
+    width: calc(100% - 4rem);
+    height: 4rem;
+    /* box-shadow: var(); */
+    padding: 1rem 2rem;
+    border-radius: 16px;
+}
+
+.container header .hero .logo a {
+    font-size: 1.7rem;
+    color: var(--text-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.container header .hero .logo a span {
+    font-family: "Parisienne", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    padding-left: 2px;
+}
+
+.container header .hero .logo a::after {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    width: 1.2rem;
+    background: var(--text-accent);
+    bottom: 10%;
+    left: 40%;
+    transition: all 0.23s ease-out;
+}
+
+.container header .hero .logo a:hover::after {
+    width: 101%;
+    left: 0;
+}
+
+.container header .hero .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header .hero .nav ul li {
+    margin-left: 2.5rem;
+}
+
+.container header .hero .nav ul li a {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.container header .hero .nav ul li a::after {
+    content: ' ';
+    height: 1px;
+    width: 30%;
+    z-index: 15111;
+    position: absolute;
+    background-color: var(--text-accent);
+    opacity: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.23s ease-in;
+}
+
+.container header .hero .nav ul li a:hover::after {
+    height: 2.2px;
+    width: 100%;
+    opacity: 1;
+    top: 90%;
+}
+
+.container header .hero .nav ul li a:hover {
+    color: var(--text-accent);
+}
+
+.container header .hero .nav ul h5 {
+    border: 2px solid var(--bg-light);
+    padding: 0.6rem 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-left: 6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container header .hero .nav ul h5::after {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-light);
+    bottom: -100%;
+    left: 0;
+    border-radius: 100%;
+    transition: all 0.23s ease-out;
+}
+
+.container header .hero .nav ul h5:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.container header .hero .nav ul h5:hover a {
+    color: var(--text-dark);
+}
+
+.container header .hero .nav ul h5 a {
+    color: var(--text-accent);
+    font-size: 1.2rem;
+    z-index: 101;
+}
+
+/* Header End */
+
+/* Footer Start */
+
+.container footer {
+    margin-top: 1rem;
+    background-color: var(--bg-dark);
+    padding: 1rem 3rem 0.3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.container footer .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2.3rem;
+}
+
+.container footer .top .leftSide {
+    width: 16.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.container footer .top .leftSide .logo a {
+    font-size: 1.7rem;
+    color: var(--text-accent);
+    font-weight: 600;
+    position: relative;
+}
+
+.container footer .top .leftSide .logo a span {
+    font-family: "Parisienne", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    padding-left: 2px;
+}
+
+.container footer .top .leftSide .logo a::after {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    width: 1.2rem;
+    background: var(--text-accent);
+    bottom: 10%;
+    left: 40%;
+    transition: all 0.23s ease-out;
+}
+
+.container footer .top .leftSide .logo a:hover::after {
+    width: 101%;
+    left: 0;
+}
+
+.container footer .top .leftSide p {
+    text-align: justify;
+    color: var(--text-accent);
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+}
+
+.container footer .top .nav h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+    color: var(--bg-light);
+}
+
+.container footer .top .nav ul li {
+    margin-bottom: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.container footer .top .nav ul li a {
+    font-size: 1rem;
+    color: var(--text-accent);
+}
+
+.container footer .top .nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container footer .top .links h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+    color: var(--bg-light);
+}
+
+.container footer .top .links ul li {
+    margin-bottom: 0.6rem;
+    margin-left: 0.7rem;
+}
+
+.container footer .top .links ul li a {
+    font-size: 1rem;
+    color: var(--text-accent);
+}
+
+.container footer .top .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.container footer .bottom p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Footer End */
