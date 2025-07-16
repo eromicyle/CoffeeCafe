@@ -161,7 +161,6 @@ If you’d like to improve this project:
 4. Submit a pull request
 
 ### **Commit Message Format:**
-
 ```
 feat: Add [feature name]  
 fix: Fix [bug or issue]  
@@ -183,14 +182,14 @@ For full terms, see the [LICENSE](license) file.
 
 ---
 
-### **Credits**
-## **Code & Design by Eromicyle**
+## **Credits**
+### **Code & Design by Eromicyle**
 
 ---
 
 ### **Badges**
-![Progress](https://img.shields.io/badge/Progress-40%25-orange) <br/>
 ![GitHub repo size](https://img.shields.io/github/repo-size/eromicyle/CoffeeCafe)
+![Progress](https://img.shields.io/badge/Progress-15%25-orange)
 ![GitHub language count](https://img.shields.io/github/languages/count/eromicyle/CoffeeCafe)
 ![GitHub top language](https://img.shields.io/github/languages/top/eromicyle/CoffeeCafe)
 ![License: CafeEromi Open License](https://img.shields.io/badge/license-Attribution--Required-orange)
