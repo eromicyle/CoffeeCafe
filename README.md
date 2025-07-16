@@ -10,6 +10,52 @@ It features interactive menus, an online ordering system, and a clean, aesthetic
 
 ---
 
+## **📈 Project Status**
+
+| **Feature / Page**       | **Status**         |
+| ------------------------ | ------------------ |
+| Landing Page (Home)      | ✅ Completed       |
+| Our Coffees / Our Teas   | 🚧 In Progress     |
+| Order & Cart System      | 🚧 In Progress     |
+| Checkout Page            | 🚧 In Progress     |
+| About Page               | 🚧 In Progress     |
+| Blogs                    | 🚧 In Progress     |
+| Contact & FAQs           | 🚧 In Progress     |
+| Responsive Layout        | 🚧 In Progress     |
+
+---
+
+### **Note**
+
+> Currently, only the **home page (landing page)** is completed.
+> Other sections are **work-in-progress** and will be added soon.
+
+---
+
+## **📅 Project Timeline**
+
+|**Phase**|**Dates**|**Status**|
+|---|---|---|
+|**Project Start**|July 15, 2025|✅ Started|
+|**Landing Page Completed**|July 16, 2025|✅ Completed|
+|**Other Pages Development**|July 16, 2025 – Ongoing|🚧 In Progress|
+
+---
+
+## **🗺️ Roadmap**
+
+```text
+🔹 Project Setup & Planning – ✅ Done  
+🔹 Landing Page – ✅ Done  
+🔹 Our Coffees / Teas Pages – 🔄 In Progress  
+🔹 Blogs Page – 🔄 In Progress  
+🔹 Order & Cart System – 🔄 In Progress  
+🔹 Checkout Page – 🔄 In Progress  
+🔹 Final Deployment – 🚀 Pending  
+```
+
+---
+
 ## **📂 Project Structure**
 
 ``` graphql
@@ -137,17 +183,16 @@ For full terms, see the [LICENSE](license) file.
 
 ---
 
-## **Code by Eromicyle**
+### **Credits**
+## **Code & Design by Eromicyle**
 
 ---
 
 ### **Badges**
-
-```md
-![GitHub repo size](https://img.shields.io/github/repo-size/eromicyle/cafeEromi)
-![GitHub language count](https://img.shields.io/github/languages/count/eromicyle/cafeEromi)
-![GitHub top language](https://img.shields.io/github/languages/top/eromicyle/cafeEromi)
+![Progress](https://img.shields.io/badge/Progress-40%25-orange) <br/>
+![GitHub repo size](https://img.shields.io/github/repo-size/eromicyle/CoffeeCafe)
+![GitHub language count](https://img.shields.io/github/languages/count/eromicyle/CoffeeCafe)
+![GitHub top language](https://img.shields.io/github/languages/top/eromicyle/CoffeeCafe)
 ![License: CafeEromi Open License](https://img.shields.io/badge/license-Attribution--Required-orange)
-```
 
 ---
